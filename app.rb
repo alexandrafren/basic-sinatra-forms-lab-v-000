@@ -6,5 +6,15 @@ class App < Sinatra::Base
     erb :newteam
   end
 
+  post '/team' do
+    @teamname = params[:name]
+    @coach = params[:coach]
+    @point = params[:pg]
+    @shooting = params[:sg]
+    @power = params[:pf]
+    @small = params[:sf]
+    @center = params[:c]
+  end
+
 
 end
