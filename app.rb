@@ -14,6 +14,7 @@ class App < Sinatra::Base
     @power = params[:pf]
     @small = params[:sf]
     @center = params[:c]
+    erb :team
   end
 
 
